@@ -57,6 +57,10 @@ const year = new Date().getFullYear();
 let moodData = JSON.parse(localStorage.getItem(STORAGE_KEY)) ?? getMoodData(year);
 localStorage.setItem(STORAGE_KEY, JSON.stringify(moodData));
 
-const app = document.querySelector('#app');
+const formatedTitle = `${year} Mood Calendar`;
+const title = document.querySelector('#title')
 
+title.textContent = formatedTitle;
+
+const app = document.querySelector('#app');
 drawCalendar(app, moodData);
