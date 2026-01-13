@@ -1,0 +1,54 @@
+:root {
+    --system-ui: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--system-ui);
+}
+
+table {
+    table-layout: fixed;
+    width: 1116px;
+}
+
+th {
+    width: 60px;
+    background-color: lightgray;
+}
+
+td {
+    width: 34px;
+    border: 0.5px dotted black;
+    text-align: center;
+    cursor: pointer;
+}
+
+tr:hover {
+    background: rgb(244, 244, 244);
+}
+
+.mood-0 {
+    background: transparent;
+}
+
+.mood-1 {
+    background: greenyellow;
+}
+
+.mood-2 {
+    background: yellow;
+}
+
+.mood-3 {
+    background: orange;
+}
